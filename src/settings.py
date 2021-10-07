@@ -18,4 +18,4 @@ TESTING_DB_CONNECTION_YOYO = TESTING_DB_CONNECTION.replace('+psycopg2', '')
 
 
 # BACKEND ROUTES
-IMAGE_SOURCE_ROUTE = '/images'
+IMAGE_SOURCE_ROUTE = '/images/{image_id}'
