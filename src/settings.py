@@ -11,7 +11,6 @@ LOG_LEVEL = 'DEBUG'
 
 # DB SECTION
 DB_CONNECTION = 'postgresql+psycopg2://image_handler:image_handler@db/image_handler'
-# DB_CONNECTION = 'postgresql+psycopg2://billing:billing@localhost:6432/billing'
 TESTING_DB_CONNECTION = 'postgresql+psycopg2://image_handler:image_handler@localhost:6433/image_handler'
 DB_CONNECTION_YOYO = DB_CONNECTION.replace('+psycopg2', '')
 TESTING_DB_CONNECTION_YOYO = TESTING_DB_CONNECTION.replace('+psycopg2', '')
@@ -19,3 +18,8 @@ TESTING_DB_CONNECTION_YOYO = TESTING_DB_CONNECTION.replace('+psycopg2', '')
 
 # BACKEND ROUTES
 IMAGE_SOURCE_ROUTE = '/images/{image_id}'
+IMAGE_RESIZE_ROUTE = '/images/{width}x{height}/{image_id}'
+
+
+# Path
+IMAGES_DIR = '/app/static/images/'

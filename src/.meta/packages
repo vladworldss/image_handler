@@ -1,5 +1,6 @@
 falcon==1.1.0
 gunicorn==19.6.0
+pillow==8.4.0
 invoke==1.5.0
 psycopg2-binary==2.8.6
 requests==2.25.1
@@ -7,3 +8,4 @@ SQLAlchemy==1.3.19
 yoyo-migrations==7.3.1
 webargs==1.6.0
 marshmallow==3.0.0b6
+structlog==19.2.*
